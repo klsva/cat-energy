@@ -138,10 +138,12 @@ gulp.task('style:build', () => {
       .pipe(scss({
           sourceMap: true,
           errLogToConsole: true
-      }))
+      }))      
       .pipe(autoPrefixer())
       .pipe(cssmin())
       .pipe(sourcemaps.write())
+      .pipe(replace('../../fonts', '../fonts'))
+      .pipe(replace('../../../images', '../images'))
       .pipe(gulp.dest(paths.build.css))
       .pipe(browserSync.stream());
 });
@@ -159,7 +161,7 @@ gulp.task('image:build', () => {
 });
 
 gulp.task('fonts:build', () => {
-  return gulp.src(paths.src.fonts)
+  return gulp.src(paths.src.fonts)      
       .pipe(gulp.dest(paths.build.fonts))
 });
 

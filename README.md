@@ -22,10 +22,12 @@ $ git clone https://github.com/klsva/cat-energy.git
 $ cd cat-energy
 $ npm install
 $ gulp
+```
 
 Application will run at http://localhost:3000
 in development mode
 
 ### Deploy links
+https://klsva.github.io/cat-energy/
 
 ### TODO:
