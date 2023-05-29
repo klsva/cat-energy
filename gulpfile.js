@@ -181,7 +181,7 @@ gulp.task('webserver',  () => {
 });
 
 gulp.task('deploy', () => {
-  return gulp.src("./dist/**/*")
+  return gulp.src("./build/**/*")
     .pipe(deploy())
 })
 
