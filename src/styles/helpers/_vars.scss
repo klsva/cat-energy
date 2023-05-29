@@ -1,0 +1,34 @@
+$margin: 8px;
+$padding: 8px;
+$height: 8px;
+$sliderWidth: 680;
+$sliderHeigth: 482;
+
+/*media
+320-480 - mobile
+481-768 - tablet
+769-1024 - laptop
+1025-1200 - desktop
+1201 < ...
+max-width
+*/
+$md0: 1130px;
+$md1: 1010px;
+$md2: 950px;
+$md3: 860px;
+$md4: 770px;
+$md5: 669px;
+$md6: 480px;
+$md7: 320px;
+
+//colors
+$bg: #E5E5E5;
+$basic_green: #68B738;
+$basic_grey: #F2F2F2;
+$special_grey-2: #EBEBEB;
+$special_grey: #CDCDCD;
+$special_grey-2: #666666;
+$special_dark-grey: #444444;
+$special_dark-grey-2: #222222;
+$status_error: #FF8282;
+$basic_green-2: #5EAA2F;

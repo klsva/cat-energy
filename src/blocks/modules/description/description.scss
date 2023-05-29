@@ -1,0 +1,67 @@
+.description {  
+  @media (max-width:$md3) {
+    border-bottom: 1px solid $special_grey;
+  } 
+  @media (max-width:$md5) {
+    border-bottom: none;
+  } 
+  &__blocks {
+    align-items: stretch;
+    @media (max-width:$md3) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    @media (max-width:$md5) {
+      flex-direction: column;
+    }
+  }  
+  &__block {
+    flex-basis: 20%;
+    padding-bottom: 48px;
+    @media (max-width:$md3) {
+      flex-basis: 35%;
+      margin-bottom: 94px;
+      &:nth-child(odd){
+        margin-right: 120px;
+      }
+    }
+    @media (max-width:$md5) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 30px;
+      padding-bottom: 0px;
+    }
+  }
+  &__icon {
+    width: $height*10;
+    height: $height*10;
+    background-color: $basic_green;
+    margin-bottom: 36px;
+    @media (max-width:$md5) {
+      margin-right: 30px;
+      min-width: 60px;
+      height: 60px;
+      margin-bottom: 0px;
+    }
+  }
+}
+.one {
+  background: url('../../../images/bg/1.png') no-repeat right;
+} 
+.two {
+  background: url('../../../images/bg/2.png') no-repeat right;
+}
+.three {
+  background: url('../../../images/bg/3.png') no-repeat right;
+}
+.four {
+  background: url('../../../images/bg/4.png') no-repeat right;
+}
+@media (max-width:$md5) {
+  .one, .two, .three, .four {
+    background: none;
+  }
+}

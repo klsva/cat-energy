@@ -1,0 +1,77 @@
+.contacts {
+  position: relative;
+  height: 400px;
+  @media (max-width:$md4) {
+    height: 600px;
+    flex-direction: column-reverse;
+  }
+  @media (max-width:$md5) {
+    height: 560px;
+  }
+  iframe {
+    position:absolute;
+    top: 0;
+    left: 0;
+    @media (max-width:$md4) {
+      position: relative;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 92px;
+    left: 10%;
+    width: 570px;
+    height: 201px;
+    padding: 54px 50px 51px 81px;
+    background: #fff;
+    @media (max-width:$md2) {
+      width: 470px;
+      padding: 54px 50px 51px 60px;
+    }
+    @media (max-width:$md4) {
+      position: relative;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    @media (max-width:$md2) {
+      padding: 40px;
+    }
+    @media (max-width:$md5) {
+      padding: 16px;
+      height: 160px;
+    }
+    h4 {
+      width: 43%;
+      line-height: 25px;
+      @media (max-width:$md4) {
+        width: 30%;
+      }
+      @media (max-width:$md5) {
+        width: 47%;
+        font-size: 16px;
+      }
+    }
+  }
+  &__address{
+    width: 43%;
+    color: #444444;
+    @media (max-width:$md4) {
+      width: 29%;
+      text-align: right;
+    }
+    @media (max-width:$md5) {
+      width: 49%;
+      font-size: 14px;
+      text-align: left;
+    }
+  }
+  .address {
+    &__street {
+      padding-bottom: 24px;
+    }
+  }
+}

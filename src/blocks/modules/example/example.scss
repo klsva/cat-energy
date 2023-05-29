@@ -1,0 +1,362 @@
+.example {
+  @media (max-width:$md5) {
+    background-color: $basic_grey;
+  } 
+  h2 {
+    @media (max-width:$md5) {
+      padding-top: 30px;
+      margin-bottom: 20px;
+    } 
+  }
+  &__body {
+    background-color: $basic_grey;
+    padding: 35px 0 75px 0;
+    position: relative;
+    @media (max-width:$md1) {
+      padding: 25px 0 65px 0;
+    } 
+    @media (max-width:$md2) {
+      padding: 20px 0 55px 0;
+    } 
+    @media (max-width:$md3) {
+      background-color: transparent;
+      padding: 20px 0 234px 0;
+    } 
+    @media (max-width:$md5) {
+      padding-top: 0px;
+    } 
+  }
+  &__exbody {
+    display: none;
+    @media (max-width:$md3) {
+      display: flex;
+      background-color: $basic_grey;
+      padding: 20px 0 412px 0;
+    } 
+    @media (max-width:$md5) {
+      padding: 20px 0 160px 0;
+    } 
+  }
+  &__case {
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+    padding-top: 42px;
+    @media (max-width:$md1) {
+      padding-top: 36px;
+    } 
+    @media (max-width:$md2) {
+      padding-top: 32px;
+    } 
+    @media (max-width:$md3) {      
+      padding-top: 24px;
+      width: 100%;
+    } 
+  }
+  &__content {
+    color: #444444;
+    margin-bottom: 70px;
+    @media (max-width:$md1) {
+      margin-bottom: 50px;
+    } 
+    @media (max-width:$md2) {
+      margin-bottom: 40px;
+    } 
+  }
+  &__data {
+    @media (max-width:$md3) {      
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    } 
+    @media (max-width:$md5) {      
+      flex-direction: column;
+      align-items: center;
+    } 
+  }
+  &__results {
+    display: flex;
+    flex-direction: row; 
+    @media (max-width:$md5) {      
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 30px;
+    }    
+  }
+  &__kpi {
+    border: 1px solid $special_grey;
+    border-radius: 3px;
+    width: 162px;
+    padding: 15px 0 18px 0;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    @media (max-width:$md3) {      
+      margin-bottom: 0px;      
+    } 
+    @media (max-width:$md5) {
+      width: 124px;
+      font-size: 24px;
+    }
+    &:first-child {
+      margin-right: 42px;
+      @media (max-width:$md2) {
+        margin-right: 12px;
+      } 
+    }
+    span {
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      color: #444444;
+      position: absolute;
+      bottom: -6px;
+      padding: 0 5px;
+      background-color: $basic_grey;
+      text-transform: lowercase;
+      @media (max-width:$md3) {
+        background-color: #fff;
+      } 
+      @media (max-width:$md4) {
+        background-color: $basic_grey;
+      } 
+      @media (max-width:$md5) {
+        font-size: 12px;
+        width: 60%;
+        bottom: -14px;
+      }
+    }
+  }
+  &__costs {
+    width: 80%;
+    @media (max-width:$md2) {
+      width: 100%;
+    } 
+    @media (max-width:$md3) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-around;
+      width: 50%;
+      height: 48px;
+    } 
+    @media (max-width:$md5) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      span {
+        margin-left: 10px;
+      }
+    } 
+  }
+  .slider {
+    width: $sliderWidth+px;
+    height: $sliderHeigth+px;
+    position: absolute;
+    top: -46%;
+    right: 0;
+    @media (max-width:$md0) {
+      width: calc($sliderWidth / 1.09)+px;
+      height: calc($sliderHeigth / 1.09)+px;
+      top: -36%;
+    }
+    @media (max-width:$md1) {
+      width: calc($sliderWidth / 1.23)+px;
+      height: calc($sliderHeigth / 1.23)+px;
+      top: -26%;
+    }
+    @media (max-width:$md2) {
+      width: calc($sliderWidth / 1.33)+px;
+      height: calc($sliderHeigth / 1.33)+px;
+      top: -26%;
+    }
+    @media (max-width:$md3) {
+      width: calc($sliderWidth / 1.02)+px;
+      height: calc($sliderHeigth / 1.02)+px;
+      top:125%;
+      left: 0; 
+      right: 0; 
+      margin-left: auto; 
+      margin-right: auto;
+    }
+    @media (max-width:$md5){
+      width: calc($sliderWidth / 1.6)+px;
+      height: calc($sliderHeigth / 1.6)+px;
+      top:104%;
+    }
+    @media (max-width:$md7){
+      width: calc($sliderWidth / 2.2)+px;
+      height: calc($sliderHeigth / 2.2)+px;
+      top:104%;
+    }
+    &__container {
+      width: 100%;
+      margin-bottom: 33px;
+      position: relative;
+      height: 100%;
+    }
+    img {
+      max-width: $sliderWidth+px;
+      height: 100%;
+    }
+    &__img-position {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    &__before {
+      width: 52%;
+    }
+    &__after {
+      direction: rtl;
+      width: 48%;
+      left: auto;  
+      right: 0;   
+    }
+    .results {
+      &__toggles {
+        width: 80%;
+        margin: 0 auto;
+      }
+      &__legend {
+        line-height: 30px;
+        text-transform: uppercase;
+        border-bottom: 1px dotted $special_grey;
+        @media (max-width:$md5) {
+          border-bottom: none;
+        } 
+      }
+      input {
+        &[type="range"] {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 100%;
+          background-color: $special_grey;
+          outline: none;
+          cursor: pointer;
+          margin: 0 24px;
+          border-radius: 6px;
+          height: 6px;      
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            height: 34px;
+            width: 34px;
+            cursor: pointer;
+            background-color: $basic_green;
+            border-radius: 50%;
+            border: 13px solid #fff;
+            position: relative;
+            box-shadow: 0 0 0 2px rgba(205, 205, 205, 1);
+      
+            &:hover {
+              box-shadow: 0 2px 2px 1px rgba(205, 205, 205, 1);
+            }
+          }      
+          &::-moz-range-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            width: 8px;
+            cursor: pointer;
+            background-color: $basic_green;
+            border-radius: 50%;
+            border: 13px solid #fff;
+            position: relative;
+            box-shadow: 0 0 0 2px rgba(205, 205, 205, 1);
+      
+            &:hover {
+              box-shadow: 0 2px 2px 1px rgba(205, 205, 205, 1);
+            }
+          }
+        }      
+        &[type=range]::-ms-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          height: 8px;
+          width: 8px;
+          cursor: pointer;
+          background-color: $basic_green;
+          border-radius: 50%;
+          border: 10px solid #fff;
+          position: relative;
+          box-shadow: 0 0 0 2px rgba(205, 205, 205, 1);
+      
+          &:hover {
+            box-shadow: 0 2px 2px 1px rgba(205, 205, 205, 1);
+          }
+        }
+      }
+      @media (max-width:$md5) {
+        input[type="range"] {
+          -webkit-appearance: none;
+          appearance: none; 
+          width: 100%;
+          cursor: pointer;
+          outline: none;
+          overflow: hidden;
+          height: 14px;
+          border-radius: 16px;
+          border: 5px solid #fff;
+          box-shadow: 0 0 0px 1px rgba(221, 221, 221, 1);
+          &::-webkit-slider-runnable-track {
+            height: 14px;
+            background: #fff;
+            border-radius: 16px;
+          }
+          &::-moz-range-track {
+            height: 14px;
+            background: #fff;
+            border-radius: 16px;
+          }
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none; 
+            height: 14px;
+            width: 14px;
+            background-color: $basic_green;
+            border-radius: 50%;
+            border: 2px solid $basic_green;
+            /*  slider progress trick  */
+            box-shadow: -407px 0 0 400px $basic_green;
+          }
+          &::-moz-range-thumb {
+            height: 15px;
+            width: 15px;
+            background-color: $basic_green;
+            border-radius: 50%;
+            border: 1px solid $basic_green;
+            /*  slider progress trick  */
+            box-shadow: -407px 0 0 400px $basic_green;
+          }
+        }  
+      }
+    }
+  }
+}
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+

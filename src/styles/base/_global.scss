@@ -1,0 +1,155 @@
+html,
+body {
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+	@media (max-width: 669px) {
+    body.lock{
+        overflow: hidden;
+    }
+    section.hidden{
+        visibility: hidden;
+    }
+}
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0 auto;
+	min-height: 100%;
+	background-color: #ffffff;
+}
+.container{
+  width: 1250px;
+	max-width: 100%;
+  margin: 0 auto;
+  padding: 0 $padding*2;
+	@media (max-width:$md1) {
+		width: 1010px;
+	}
+	@media (max-width:$md2) {
+		width: 950px;
+		padding: 0 $padding*4;
+	}
+	@media (max-width:$md3) {
+		width: 860px;
+	}
+	@media (max-width:$md4) {
+		width: 770px;
+	}
+}
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.flex-row-center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.margin-bottom {
+	margin-bottom: $margin*8;
+	@media (max-width:$md1) {
+    margin-bottom: $margin*7;
+  }
+  @media (max-width:$md2) {
+    margin-bottom: $margin*6;
+  }
+  @media (max-width:$md3) {
+    margin-bottom: $margin*5;
+  }
+  @media (max-width:$md4) {
+    margin-bottom: $margin*4;
+  }
+	@media (max-width:$md5) {
+    margin-bottom: $margin*3;
+  }
+}
+.hidden {
+	display: none;
+}
+.oswald {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+}
+h4 {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 20px;
+	text-transform: uppercase;
+	@media (max-width:$md1) {
+		font-size: 18px;
+		line-height: 18px;
+	}
+}
+h3{
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 36px;
+	text-transform: uppercase;
+	@media (max-width:$md0) {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	@media (max-width:$md1) {
+		font-size: 26px;
+		line-height: 26px;
+	}
+	@media (max-width:$md2) {
+		font-size: 24px;
+		line-height: 24px;
+	}
+}
+h2 {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 60px;
+	margin-bottom: 70px;
+	@media (max-width:$md1) {
+		font-size: 50px;
+		line-height: 50px;
+	}
+	@media (max-width:$md2) {
+		margin-bottom: 50px;
+	}
+}
+h1 {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 60px;
+	@media (max-width:$md1) {
+		font-size: 50px;
+		line-height: 50px;
+	} 
+}
+
+
+
+
