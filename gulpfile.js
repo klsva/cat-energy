@@ -14,6 +14,7 @@ import pngquant from 'imagemin-pngquant';
 import webpack from 'webpack-stream';
 import { resolve } from 'node:path';
 import replace from 'gulp-replace';
+import deploy from 'gulp-gh-pages';
 
 const scss = gulpSass(dartSass);
 const browserSync = browserSc.create();
@@ -178,6 +179,11 @@ gulp.task('webserver',  () => {
   gulp.watch(paths.watch.img, gulp.parallel("image:build"));
   gulp.watch(paths.watch.fonts, gulp.parallel("fonts:build"));
 });
+
+gulp.task('deploy', () => {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
+})
 
 gulp.task('default', 
             gulp.series('clean', 
